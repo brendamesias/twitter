@@ -36,6 +36,7 @@ boton.addEventListener('click', function(event) {
     textTweet.textContent = characters.value;
     tweet.appendChild(textTweet);
     tweetsPublicados.appendChild(tweet);
+    tweetsPublicados.insertBefore(tweet, tweetsPublicados.firstElementChild);
     characters.value = '';
   };
 });
